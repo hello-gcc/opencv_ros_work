@@ -1,0 +1,7 @@
+.vscode
+Makefile
+pic/*
+DisplayVideo
+CMakeFiles
+cmake_install.cmake
+build

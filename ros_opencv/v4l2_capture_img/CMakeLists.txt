@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(v4l2_img)
+find_package(OpenCV REQUIRED)
+add_executable(v4l2_img v4l2_img.cpp)
+target_link_libraries(v4l2_img ${OpenCV_LIBS})
