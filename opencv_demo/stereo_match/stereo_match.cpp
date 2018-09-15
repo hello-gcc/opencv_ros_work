@@ -657,8 +657,8 @@ int main(int argc, char** argv)
 	unsigned char *yuv422frame_r = NULL;
 	unsigned long yuvframeSize_r = 0;
 
-	string videoDev_left  = "/dev/video1";
-	string videoDev_right = "/dev/video2";
+	string videoDev_left  = "/dev/video2";
+	string videoDev_right = "/dev/video1";
 	V4L2Capture *vcap_left = new V4L2Capture(const_cast<char*>(videoDev_left.c_str()), 640, 480);
 	V4L2Capture *vcap_right = new V4L2Capture(const_cast<char*>(videoDev_right.c_str()), 640, 480);
 	vcap_left->openDevice();
